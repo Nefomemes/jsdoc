@@ -1,0 +1,1 @@
+for i in ./docs/howto/howto-*md; do mv "$i"  "${i/howto-/}"; done

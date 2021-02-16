@@ -1,1 +1,0 @@
-mv  -v ./jsdocs/* ./docs/
