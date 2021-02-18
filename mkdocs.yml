@@ -1,3 +1,4 @@
-site_name: JSDocs
+site_name: JSDoc
+site_url: https://nefomemes.github.io/jsdoc/
 theme:
   name: material
