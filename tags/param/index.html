@@ -1,0 +1,1767 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Document the parameter to a function.">
+      
+      
+      
+      
+        <link rel="canonical" href="https://nefomemes.github.io/jsdoc/tags/param/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Param - JSDoc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://nefomemes.github.io/jsdoc/" title="JSDoc" class="md-header-nav__button md-logo" aria-label="JSDoc">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            JSDoc
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Param
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://nefomemes.github.io/jsdoc/" title="JSDoc" class="md-nav__button md-logo" aria-label="JSDoc">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    JSDoc
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins-markdown/" class="md-nav__link">
+        Using the Markdown plugin
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/CONTRIBUTING/" class="md-nav__link">
+        CONTRIBUTING
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/block-inline-tags/" class="md-nav__link">
+        Block and inline tags
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/commandline/" class="md-nav__link">
+        Command-line arguments to JSDoc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/configuring-default-template/" class="md-nav__link">
+        Configuring JSDoc's default template
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/configuring-jsdoc/" class="md-nav__link">
+        Configuring JSDoc with a configuration file
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/getting-started/" class="md-nav__link">
+        Getting Started with JSDoc 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/including-package/" class="md-nav__link">
+        Including a Package File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/including-readme/" class="md-nav__link">
+        Including a README File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/license-jsdoc3/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/namepaths/" class="md-nav__link">
+        Using namepaths with JSDoc 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/plugins/" class="md-nav__link">
+        About JSDoc plugins
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/tutorials/" class="md-nav__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        Howto
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Howto" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Howto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/amd-modules/" class="md-nav__link">
+        AMD Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/commonjs-modules/" class="md-nav__link">
+        CommonJS Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/es2015-classes/" class="md-nav__link">
+        ES 2015 Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/es2015-modules/" class="md-nav__link">
+        ES 2015 Modules
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      
+      <label class="md-nav__link" for="nav-5">
+        Tags
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tags" data-md-level="1">
+        <label class="md-nav__title" for="nav-5">
+          <span class="md-nav__icon md-icon"></span>
+          Tags
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstract/" class="md-nav__link">
+        Abstract
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access/" class="md-nav__link">
+        Access
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alias/" class="md-nav__link">
+        Alias
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../async/" class="md-nav__link">
+        Async
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../augments/" class="md-nav__link">
+        Augments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../author/" class="md-nav__link">
+        Author
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../borrows/" class="md-nav__link">
+        Borrows
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback/" class="md-nav__link">
+        Callback
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class/" class="md-nav__link">
+        Class
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classdesc/" class="md-nav__link">
+        Classdesc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constant/" class="md-nav__link">
+        Constant
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../constructs/" class="md-nav__link">
+        Constructs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copyright/" class="md-nav__link">
+        Copyright
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../default/" class="md-nav__link">
+        Default
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deprecated/" class="md-nav__link">
+        Deprecated
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../description/" class="md-nav__link">
+        Description
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enum/" class="md-nav__link">
+        Enum
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../event/" class="md-nav__link">
+        Event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example/" class="md-nav__link">
+        Example
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exports/" class="md-nav__link">
+        Exports
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external/" class="md-nav__link">
+        External
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file/" class="md-nav__link">
+        File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fires/" class="md-nav__link">
+        Fires
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function/" class="md-nav__link">
+        Function
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generator/" class="md-nav__link">
+        Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../global/" class="md-nav__link">
+        Global
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hideconstructor/" class="md-nav__link">
+        Hideconstructor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ignore/" class="md-nav__link">
+        Ignore
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../implements/" class="md-nav__link">
+        Implements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inheritdoc/" class="md-nav__link">
+        Inheritdoc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inline-link/" class="md-nav__link">
+        Inline link
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inline-tutorial/" class="md-nav__link">
+        Inline tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inner/" class="md-nav__link">
+        Inner
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instance/" class="md-nav__link">
+        Instance
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        Interface
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kind/" class="md-nav__link">
+        Kind
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lends/" class="md-nav__link">
+        Lends
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../listens/" class="md-nav__link">
+        Listens
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../member/" class="md-nav__link">
+        Member
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memberof/" class="md-nav__link">
+        Memberof
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixes/" class="md-nav__link">
+        Mixes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mixin/" class="md-nav__link">
+        Mixin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module/" class="md-nav__link">
+        Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../name/" class="md-nav__link">
+        Name
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespace/" class="md-nav__link">
+        Namespace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../override/" class="md-nav__link">
+        Override
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package/" class="md-nav__link">
+        Package
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Param
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Param
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names-types-and-descriptions" class="md-nav__link">
+    Names, types, and descriptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters-with-properties" class="md-nav__link">
+    Parameters with properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-parameters-and-default-values" class="md-nav__link">
+    Optional parameters and default values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-types-and-repeatable-parameters" class="md-nav__link">
+    Multiple types and repeatable parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callback-functions" class="md-nav__link">
+    Callback functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../private/" class="md-nav__link">
+        Private
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protected/" class="md-nav__link">
+        Protected
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../public/" class="md-nav__link">
+        Public
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readonly/" class="md-nav__link">
+        Readonly
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requires/" class="md-nav__link">
+        Requires
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../returns/" class="md-nav__link">
+        Returns
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../see/" class="md-nav__link">
+        See
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../since/" class="md-nav__link">
+        Since
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../static/" class="md-nav__link">
+        Static
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summary/" class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../this/" class="md-nav__link">
+        This
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../throws/" class="md-nav__link">
+        Throws
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../todo/" class="md-nav__link">
+        Todo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        Tutorial
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type/" class="md-nav__link">
+        Type
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typedef/" class="md-nav__link">
+        Typedef
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variation/" class="md-nav__link">
+        Variation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version/" class="md-nav__link">
+        Version
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yields/" class="md-nav__link">
+        Yields
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names-types-and-descriptions" class="md-nav__link">
+    Names, types, and descriptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters-with-properties" class="md-nav__link">
+    Parameters with properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-parameters-and-default-values" class="md-nav__link">
+    Optional parameters and default values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-types-and-repeatable-parameters" class="md-nav__link">
+    Multiple types and repeatable parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callback-functions" class="md-nav__link">
+    Callback functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Param</h1>
+                
+                <h2 id="overview">Overview</h2>
+<p>The <code>@param</code> tag provides the name, type, and description of a function parameter.</p>
+<p>The <code>@param</code> tag requires you to specify the name of the parameter you are documenting. You can also
+include the parameter's type, enclosed in curly brackets, and a description of the parameter.</p>
+<p>The parameter type can be a built-in JavaScript type, such as <code>string</code> or <code>Object</code>, or a
+<a href="about-namepaths.html">JSDoc namepath</a> to another symbol in your code. If you have written documentation for the
+symbol at that namepath, JSDoc will automatically link to the documentation for that symbol. You can
+also use a type expression to indicate, for example, that a parameter is not nullable or can accept
+any type; see the <a href="tags-type.html"><code>@type</code> tag documentation</a> for details.</p>
+<p>If you provide a description, you can make the JSDoc comment more readable by inserting a hyphen
+before the description. Be sure to include a space before and after the hyphen.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="names-types-and-descriptions">Names, types, and descriptions</h3>
+<p>The following examples show how to include names, types, and descriptions in a <code>@param</code> tag.</p>
+<p>{% example "Name only" %}</p>
+<pre><code class="language-js">/**
+ * @param somebody
+ */
+function sayHello(somebody) {
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "Name and type" %}</p>
+<pre><code class="language-js">/**
+ * @param {string} somebody
+ */
+function sayHello(somebody) {
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "Name, type, and description" %}</p>
+<pre><code class="language-js">/**
+ * @param {string} somebody Somebody's name.
+ */
+function sayHello(somebody) {
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>You can add a hyphen before the description to make it more readable. Be sure to include a space
+before and after the hyphen.</p>
+<p>{% example "Name, type, and description, with a hyphen before the description" %}</p>
+<pre><code class="language-js">/**
+ * @param {string} somebody - Somebody's name.
+ */
+function sayHello(somebody) {
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<h3 id="parameters-with-properties">Parameters with properties</h3>
+<p>If a parameter is expected to have a specific property, you can document that property by providing
+an additional <code>@param</code> tag. For example, if an <code>employee</code> parameter is expected to have <code>name</code> and
+<code>department</code> properties, you can document it as follows:</p>
+<p>{% example "Documenting a parameter's properties" %}</p>
+<pre><code class="language-js">/**
+ * Assign the project to an employee.
+ * @param {Object} employee - The employee who is responsible for the project.
+ * @param {string} employee.name - The name of the employee.
+ * @param {string} employee.department - The employee's department.
+ */
+Project.prototype.assign = function(employee) {
+    // ...
+};
+</code></pre>
+<p>{% endexample %}</p>
+<p>If a parameter is destructured without an explicit name, you can give the object an appropriate one and
+document its properties.</p>
+<p>{% example "Documenting a destructuring parameter" %}</p>
+<pre><code class="language-js">/**
+ * Assign the project to an employee.
+ * @param {Object} employee - The employee who is responsible for the project.
+ * @param {string} employee.name - The name of the employee.
+ * @param {string} employee.department - The employee's department.
+ */
+Project.prototype.assign = function({ name, department }) {
+    // ...
+};
+</code></pre>
+<p>{% endexample %}</p>
+<p>You can also combine this syntax with JSDoc's syntax for array parameters. For example, if multiple
+employees can be assigned to a project:</p>
+<p>{% example "Documenting properties of values in an array" %}</p>
+<pre><code class="language-js">/**
+ * Assign the project to a list of employees.
+ * @param {Object[]} employees - The employees who are responsible for the project.
+ * @param {string} employees[].name - The name of an employee.
+ * @param {string} employees[].department - The employee's department.
+ */
+Project.prototype.assign = function(employees) {
+    // ...
+};
+</code></pre>
+<p>{% endexample %}</p>
+<h3 id="optional-parameters-and-default-values">Optional parameters and default values</h3>
+<p>The following examples show how to indicate that a parameter is optional and has a default value.</p>
+<p>{% example "An optional parameter (using JSDoc syntax)" %}</p>
+<pre><code class="language-js">/**
+ * @param {string} [somebody] - Somebody's name.
+ */
+function sayHello(somebody) {
+    if (!somebody) {
+        somebody = 'John Doe';
+    }
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "An optional parameter (using Google Closure Compiler syntax)" %}</p>
+<pre><code class="language-js">/**
+ * @param {string=} somebody - Somebody's name.
+ */
+function sayHello(somebody) {
+    if (!somebody) {
+        somebody = 'John Doe';
+    }
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "An optional parameter and default value" %}</p>
+<pre><code class="language-js">/**
+ * @param {string} [somebody=John Doe] - Somebody's name.
+ */
+function sayHello(somebody) {
+    if (!somebody) {
+        somebody = 'John Doe';
+    }
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<h3 id="multiple-types-and-repeatable-parameters">Multiple types and repeatable parameters</h3>
+<p>The following examples show how to use type expressions to indicate that a parameter can accept
+multiple types (or any type), and that a parameter can be provided more than once. See the
+<a href="tags-type.html"><code>@type</code> tag documentation</a> for details about the type expressions that JSDoc supports.</p>
+<p>{% example "Allows one type OR another type (type union)" %}</p>
+<pre><code class="language-js">/**
+ * @param {(string|string[])} [somebody=John Doe] - Somebody's name, or an array of names.
+ */
+function sayHello(somebody) {
+    if (!somebody) {
+        somebody = 'John Doe';
+    } else if (Array.isArray(somebody)) {
+        somebody = somebody.join(', ');
+    }
+    alert('Hello ' + somebody);
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "Allows any type" %}</p>
+<pre><code class="language-js">/**
+ * @param {*} somebody - Whatever you want.
+ */
+function sayHello(somebody) {
+    console.log('Hello ' + JSON.stringify(somebody));
+}
+</code></pre>
+<p>{% endexample %}</p>
+<p>{% example "Allows a parameter to be repeated" %}</p>
+<pre><code class="language-js">/**
+ * Returns the sum of all numbers passed to the function.
+ * @param {...number} num - A positive or negative number.
+ */
+function sum(num) {
+    var i = 0, n = arguments.length, t = 0;
+    for (; i &amp;lt; n; i++) {
+        t += arguments[i];
+    }
+    return t;
+}
+</code></pre>
+<p>{% endexample %}</p>
+<h3 id="callback-functions">Callback functions</h3>
+<p>If a parameter accepts a callback function, you can use the <a href="tags-callback.html"><code>@callback</code> tag</a> to
+define a callback type, then include the callback type in the <code>@param</code> tag.</p>
+<p>{% example "Parameters that accept a callback" %}</p>
+<pre><code class="language-js">/**
+ * This callback type is called `requestCallback` and is displayed as a global symbol.
+ *
+ * @callback requestCallback
+ * @param {number} responseCode
+ * @param {string} responseMessage
+ */
+
+/**
+ * Does something asynchronously and executes the callback on completion.
+ * @param {requestCallback} cb - The callback that handles the response.
+ */
+function doSomethingAsynchronously(cb) {
+    // code
+};
+</code></pre>
+<p>{% endexample %}</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../package/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Package
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../private/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Private
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
